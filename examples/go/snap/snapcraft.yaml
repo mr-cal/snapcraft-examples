@@ -1,0 +1,17 @@
+name: example-go-hello-world
+version: "1.0"
+summary: Say hello world with Go.
+description: Creates a simple hello world snap using Go.
+grade: devel
+base: core22
+confinement: strict
+
+apps:
+  example-go-hello-world:
+    command: bin/go-mod-hello
+
+parts:
+  hello:
+    source: .
+    plugin: go
+    build-snaps: [go]
