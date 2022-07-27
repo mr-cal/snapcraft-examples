@@ -1,0 +1,7 @@
+#!/usr/bin/env ipython3
+
+import subprocess
+
+print('hello world')
+print(subprocess.run(['echo $PATH'], shell=True, stdout=subprocess.PIPE).stdout)
+print(subprocess.run(['which ipython'], shell=True, stdout=subprocess.PIPE).stdout)
