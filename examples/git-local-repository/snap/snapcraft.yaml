@@ -1,0 +1,25 @@
+name: example-git-local-repository
+base: core22
+version: '1.0'
+summary: Pulls files from local git repositories
+description: |
+  Pulls files from two different types of local git repositories
+    1. Pull from a git submodule
+    2. Pull from a local git repo
+grade: stable
+confinement: strict
+
+apps:
+  example-git-local-repository:
+    command: usr/local/bin/hello-world
+
+parts:
+  git-local-repository:
+    plugin: cmake
+    source: my/local/repo
+    source-type: git
+
+  git-submodule:
+    plugin: cmake
+    source: cmake-hello-world
+    source-type: git

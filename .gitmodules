@@ -1,0 +1,3 @@
+[submodule "examples/git-local-repository/cmake-hello-world"]
+	path = examples/git-local-repository/cmake-hello-world
+	url = git@github.com:mr-cal/cmake-hello-world.git
