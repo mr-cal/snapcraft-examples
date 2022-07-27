@@ -35,7 +35,7 @@ If you can't find what you're looking for in this repository, try searching GitH
 Feel free to submit a bug or PR.  New examples and applications are encouraged!
 
 ## TODO
-[ ] Write script to read `config.toml` and pull snap data from the source.
-[ ] Create GitHub workflow to lint `snapcraft.yaml` files.
-[ ] Create GitHub workflow to build example snaps.
-[ ] Add many more applications and examples!
+- [ ] Write script to read `config.toml` and pull snap data from the source.
+- [ ] Create GitHub workflow to lint `snapcraft.yaml` files.
+- [ ] Create GitHub workflow to build example snaps.
+- [ ] Add many more applications and examples!
