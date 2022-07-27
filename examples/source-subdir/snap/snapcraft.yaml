@@ -1,0 +1,19 @@
+name: example-source-subdir
+version: "1.0"
+summary: Build a snap using the source-subdir parameter.
+description: |
+  The cmake project is contained in the subdirectory `cmake-project/`.
+  Using the parameter `source-subdir`, the cmake code can be located and built by snapcraft.
+grade: stable
+confinement: strict
+base: core22
+
+apps:
+  exmaple-source-subdir:
+    command: usr/local/bin/hello-world
+
+parts:
+  hello-world:
+    plugin: cmake
+    source: .
+    source-subdir: cmake-project
