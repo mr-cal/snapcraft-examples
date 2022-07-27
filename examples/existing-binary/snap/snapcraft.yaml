@@ -1,0 +1,17 @@
+name: example-existing-binary
+base: core20
+version: '1.0'
+summary: Snap a premade binary.
+description: A simple functional snap containing a single pre-existing binary file using the dump plugin.
+grade: devel
+confinement: devmode
+
+apps:
+  example-existing-binary:
+    command: myapp
+
+parts:
+  mypart:
+    plugin: dump
+    source: .
+    stage: [myapp]
