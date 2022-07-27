@@ -1,0 +1,32 @@
+name: example-pkg-config
+base: core22
+version: '1.0'
+summary: test pkg-config with miral library
+description: |
+  This snapcraft.yaml is a subset of the ubuntu-frame snapcraft.yaml from https://github.com/MirServer/ubuntu-frame.
+  It demonstrates how an application can use pkg-config (.pc) files from a staged snap to build another snap.
+grade: stable
+confinement: strict
+
+apps:
+  example-pkg-config:
+    command: usr/local/bin/hello-world
+
+parts:
+  mir-core20:
+    plugin: nil
+    stage-snaps:
+      - mir-core20/latest/edge
+    prime:
+      - -*.h
+      - -*.pc
+      - -share
+
+  hello-world:
+    source: .
+    plugin: cmake
+    after: [mir-core20]
+    build-packages:
+      - pkg-config
+    build-environment:
+    - LD_LIBRARY_PATH: ${SNAPCRAFT_STAGE}/usr/lib/${SNAPCRAFT_ARCH_TRIPLET}
