@@ -1,0 +1,19 @@
+name: example-npm-hello-world
+version: "1.0"
+summary: Say hello world with npm.
+description: Creates a simple hello world snap using npm.
+
+confinement: strict
+grade: devel
+base: core20
+
+apps:
+  example-npm-hello-world:
+    command: bin/npm-hello
+
+parts:
+  hello:
+    source: .
+    plugin: npm
+    npm-node-version: "12.16.2"
+
