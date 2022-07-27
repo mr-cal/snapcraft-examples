@@ -1,8 +1,8 @@
 [source]
-url=https://github.com/snapcrafters/alacritty
-snapcraft-yaml=https://github.com/snapcrafters/alacritty/blob/master/snap/snapcraft.yaml
-snap-dir=https://github.com/snapcrafters/alacritty/tree/master/snap
+url="https://github.com/snapcrafters/alacritty"
+snapcraft-yaml="https://github.com/snapcrafters/alacritty/blob/master/snap/snapcraft.yaml"
+snap-dir="https://github.com/snapcrafters/alacritty/tree/master/snap"
 
 [license]
-url=https://github.com/snapcrafters/alacritty/blob/master/LICENSE
-type=mit
+url="https://github.com/snapcrafters/alacritty/blob/master/LICENSE"
+type="mit"
