@@ -1,0 +1,16 @@
+name: example-meson-hello-world
+version: "1.0"
+summary: Say hello world with Meson
+description: Creates a simple hello world snap using Meson.
+grade: devel
+confinement: strict
+base: core22
+
+apps:
+  example-meson-hello-world:
+    command: usr/local/bin/hello-world
+
+parts:
+  hello-world:
+    plugin: meson
+    source: .
