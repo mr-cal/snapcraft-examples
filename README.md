@@ -11,9 +11,10 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="#Overview">Overview</a> •
+  <a href="#Usage">Usage</a> •
+  <a href="#Contributing">Contributing</a>
+  <a href="#TODO">TODO</a> •
 </p>
 
 ## Overview
@@ -32,3 +33,9 @@ If you can't find what you're looking for in this repository, try searching GitH
 
 ## Contributing
 Feel free to submit a bug or PR.  New examples and applications are encouraged!
+
+## TODO
+[ ] Write script to read `config.toml` and pull snap data from the source.
+[ ] Create GitHub workflow to lint `snapcraft.yaml` files.
+[ ] Create GitHub workflow to build example snaps.
+[ ] Add many more applications and examples!
