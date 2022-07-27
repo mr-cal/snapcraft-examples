@@ -1,0 +1,17 @@
+name: example-crystal-hello-world
+version: "1.0"
+summary: Say hello world with Crystal.
+description: Creates a simple hello world snap using Crystal.
+
+grade: devel
+base: core22
+confinement: strict
+
+apps:
+  example-crystal-hello-world:
+    command: bin/hello
+
+parts:
+  hello:
+    plugin: crystal
+    source: .
