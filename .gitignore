@@ -1,0 +1,7 @@
+build
+.envrc
+src/*.egg-info/
+.eggs/
+.mypy_cache
+*.pyc
+__pycache__
