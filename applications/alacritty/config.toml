@@ -1,3 +1,6 @@
+[info]
+name="alacritty"
+
 [source]
 url="https://github.com/snapcrafters/alacritty"
 snapcraft-yaml="https://github.com/snapcrafters/alacritty/blob/master/snap/snapcraft.yaml"
