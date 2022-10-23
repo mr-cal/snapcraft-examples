@@ -1,0 +1,7 @@
+[info]
+name="android-studio"
+
+[source]
+url="https://github.com/snapcrafters/alacritty"
+snapcraft-yaml="https://github.com/snapcrafters/android-studio/blob/master/snap/snapcraft.yaml"
+snap-dir="https://github.com/snapcrafters/android-studio/tree/master/snap"
