@@ -1,5 +1,5 @@
 [project]
-name = "snapcraft_examples"
+name = "snapcraft-examples"
 version = "0.0.1"
 authors = [{name="Callahan Kovacs", email="callahankovacs@gmail.com"}]
 maintainers = [{name="Callahan Kovacs", email="callahankovacs@gmail.com"}]
@@ -31,4 +31,4 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.scripts]
-snapcraft_examples = "snapcraft_examples.cli:main"
+snapcraft-examples = "snapcraft_examples.cli:main"
